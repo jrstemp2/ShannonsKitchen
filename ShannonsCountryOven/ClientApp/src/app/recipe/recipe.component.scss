@@ -1,0 +1,138 @@
+
+img {
+  height: 300px;
+  width: 300px;
+  transition: box-shadow 0.3s ease;
+  border: 3px solid #190198;
+  background: #f6f5ff;
+}
+
+.form {
+  float: left;
+}
+
+.stay {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr td {
+  height: 300px;
+  width: 300px;
+  padding: 10px 10px 10px 10px;
+  border-bottom: 1px solid black;
+}
+
+
+.info {
+  font-size: 38px;
+  font-weight: bold;
+  color: #0017bd;
+}
+
+
+//----------------------ViewRecipe Widget Button---------------------
+.buttonInfo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0017bd;
+}
+
+.view {
+  height: 300px;
+  width: 300px;
+  transition: box-shadow 0.3s ease;
+  border: 3px solid #190198;
+  background: #f6f5ff;
+}
+
+.view:hover {
+  box-shadow: 5px 5px 5px 5px;
+}
+
+//---------------------Add Button------------------------
+.addButton {
+  color: #0017bd;
+  float: left;
+  background-color: #f6f5ff;
+  border: 3px solid #190198;
+  position: absolute;
+  margin-left: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.favButton {
+  color: #0017bd;
+  float: right;
+  background-color: #f6f5ff;
+  border: 3px solid #190198;
+  //position: absolute;
+  margin-right: 15px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.addButton:hover {
+  box-shadow: black 2px 2px 2px 2px;
+}
+
+
+
+
+
+//--------------------IMAGE TO TEXT TRANSITION-------------------------------------------
+
+.reccontainer {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  height: 300px !important;
+  width: 300px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #f6f5ff;
+  border: 3px solid #190198;
+  box-shadow: 5px 5px 5px 5px;
+}
+
+.reccontainer:hover .overlay {
+  opacity: 1;
+}
+
+
+
+.text {
+  color: #0017bd;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  text-align: center;
+}

@@ -1,0 +1,97 @@
+<div class="container">
+  <div class="user-container">
+    <h1 class="user-title">Recipes</h1>
+    <hr />
+  </div>
+</div>
+
+<div class="row rec-rows">
+  <div class="col-md-8 rec-rows">
+    <table class="recipe-table">
+      <tr *ngFor="let recipe of recipes">
+        <td>
+
+          <a>
+            <div class="reccontainer" [routerLink]="['/recipe', recipe.id]">
+              <img src="{{recipe.foodImage}}" alt="Image" class="image">
+              <div class="overlay">
+                <div class="text">{{recipe.title}}<br /><i class="fas fa-book-open"></i><br />View Recipe</div>
+              </div>
+            </div>
+          </a>
+
+        </td>
+        <td>
+          <button class="view" (click)="deleteRecipe(recipe.id)">
+            <div class="buttonInfo">
+              {{recipe.title}}
+            </div><br />
+            <i class="fas fa-window-close"></i><br />
+            <div class="buttonInfo">Delete Recipe</div>
+          </button>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="col-md-4 recipe-form sidebar">
+    <div class="stay">
+      <div class="form">
+        <br />
+        <h3 class="form-title">Add Recipe</h3>
+        <label>Recipe Title: </label><br /><input type="text" [(ngModel)]="newTitle" minlength="2" required />
+        <br />
+        <label>Category: </label><br />
+        <select [(ngModel)]="newCategory" required>
+          <option>
+            Breakfast
+          </option>
+          <option>
+            Lunch
+          </option>
+          <option>
+            Dinner
+          </option>
+          <option>
+            Desert
+          </option>
+          <option>
+            Beverage
+          </option>
+          <option>
+            Snack
+          </option>
+        </select>
+        <br />
+
+        <label>Ingredients: </label><br /><textarea required minlength="4" [(ngModel)]="newIngredients" #title="ngModel"></textarea>
+
+        <br />
+
+        <label>Cooking Instructions: </label><br /><textarea [(ngModel)]="newCookingInstructions" required></textarea>
+        <br />
+        <label>Total Calories</label><br /><input type="number" [(ngModel)]="newTotalCalories" required />
+        <br />
+
+        <label>Do You Have a URL to a Photo</label><br />
+        <select [(ngModel)]="showFoodImage" required>
+          <option>No</option>
+          <option>Yes</option>
+        </select>
+        <br />
+
+        <div *ngIf="showFoodImage === 'Yes'">
+          <label>URL to Photo: </label><br /><input type="text" [(ngModel)]="newFoodImage" />
+        </div>
+
+        <br />
+        <div *ngIf="errorMessage" class="alert alert-danger">
+          {{errorMessage}}
+        </div>
+        <button (click)="addNewRecipe()" class="sidebar-button">Add Recipe</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+

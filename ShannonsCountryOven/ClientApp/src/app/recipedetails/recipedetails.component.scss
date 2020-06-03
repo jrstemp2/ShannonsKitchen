@@ -1,0 +1,101 @@
+img {
+  height: 300px;
+  width: 300px;
+  text-align: center;
+}
+
+.info {
+  font-size: 38px;
+  font-weight: bold;
+  color: #0017bd;
+}
+
+.calories {
+  height: 300px;
+  width: 300px;
+  transition: box-shadow 0.3s ease;
+  border: 3px solid #190198;
+  background: #f6f5ff;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.calories:hover {
+  box-shadow: 5px 5px 5px 5px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.all {
+  justify-content: center;
+}
+
+.row {
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.button {
+  border-radius: 5px;
+  background: #0017bd;
+  color: #fff;
+  border: solid 3px #001082;
+}
+
+.button:hover {
+  background: #325320;
+  border: solid 3px #0017bd;
+  text-decoration: none;
+}
+
+
+
+.menuButton {
+  border-radius: 5px;
+  background: #f6f5ff;
+  color: #0017bd;
+  border: solid 3px #001082;
+  font-weight: bold;
+}
+
+.menuButton:hover {
+  background: #325320;
+  color: #f6f5ff;
+  border: solid 3px #0017bd;
+  text-decoration: none;
+}
+
+.menuButton2 {
+  border-radius: 5px;
+  background: #0017bd;
+  color: #f6f5ff;
+  border: solid 3px #001082;
+  font-weight: bold;
+}
+
+.menuButton2:hover {
+  background: #325320;
+  color: #0017bd;
+  border: solid 3px #0017bd;
+  text-decoration: none;
+}
+
+.update {
+  margin-left: 35%;
+  margin-right: 35%;
+}
+
+label {
+  color: #0017bd;
+  font-weight: bold;
+}
+
+.favMessage {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
