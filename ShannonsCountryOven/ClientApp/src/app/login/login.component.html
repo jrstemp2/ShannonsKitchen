@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="user-container">
+    <h1 class="user-title">Welcome Back to the Kitchen</h1>
+    <hr />
+    <div class="text-alert" *ngIf="errorMessage">
+      <p> {{ errorMessage }}</p>
+    </div>
+
+  </div>
+</div>
+
+<div class="login">
+  
+  <div>
+    <label>Username:</label><br /><input type="text" [(ngModel)]="user.userName" /><br />
+    <label> Password:</label><br /><input type="password" [(ngModel)]="user.userPassword" />
+    <br />
+    <br />
+    <button class="loginbutton" (click)="login()">Log In</button>
+  </div>
+  
+
+</div>

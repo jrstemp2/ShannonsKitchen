@@ -70,11 +70,15 @@
 
         <label>Cooking Instructions: </label><br /><textarea [(ngModel)]="newCookingInstructions" required></textarea>
         <br />
-        <label>Total Calories</label><br /><input type="number" [(ngModel)]="newTotalCalories" required />
+        <label>Total Meal Points</label><br /><input type="number" [(ngModel)]="newTotalPoints" required />
+        <br />
+        <label>Points per Serving</label><br /><input type="number" [(ngModel)]="newServingPoints" required />
+        <br />
+        <label>Serving Size</label><br /><input type="text" [(ngModel)]="newServingSize" required />
         <br />
 
         <label>Do You Have a URL to a Photo</label><br />
-        <select [(ngModel)]="showFoodImage" required>
+        <select [(ngModel)]="showFoodImage" required>w
           <option>No</option>
           <option>Yes</option>
         </select>
@@ -88,7 +92,7 @@
         <div *ngIf="errorMessage" class="alert alert-danger">
           {{errorMessage}}
         </div>
-        <button (click)="addNewRecipe()" class="sidebar-button">Add Recipe</button>
+        <button (click)="addRecipe()" class="sidebar-button">Add Recipe</button>
       </div>
 
     </div>

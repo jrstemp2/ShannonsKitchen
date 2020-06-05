@@ -15,6 +15,21 @@ export class RecipeComponent {
 
   recipes: Recipe[];
 
+  showFoodImage: string = "";
+  errorMessage: string = "";
+  newRecipe: Recipe;
+
+
+  newTitle: string = "";
+  newIngredients: string = "";
+  newCookingInstructions: string = "";
+  newCategory: string = "";
+  newTotalPoints: number;
+  newServingPoints: number;
+  newServingSize: string;
+  newFoodImage: string = "";
+  
+
   ngOnInit() {
     this.loadPage();
   }
@@ -36,6 +51,28 @@ export class RecipeComponent {
       },
       error => console.error(error)
     );
+  }
+
+  addRecipe() {
+    if (this.showFoodImage !== 'Yes') {
+      this.newFoodImage = 'assets/Images/no-food-image.png';
+    }
+    this.recipeData.addRecipe(
+      {
+        id: 0,
+        title: this.newTitle,
+        ingredients: this.newIngredients,
+        cookingInstructions: this.newCookingInstructions,
+        servingSize: this.newServingSize,
+        servingPoints: this.newServingPoints,
+        totalPoints: this.newTotalPoints,
+        category: this.newCategory,
+        foodImage: this.newFoodImage
+      } as Recipe).subscribe(data => {
+        this.loadPage();
+      },
+      error => console.error(error)
+      );
   }
 
 }

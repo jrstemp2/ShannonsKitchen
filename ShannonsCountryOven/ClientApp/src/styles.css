@@ -4,11 +4,11 @@
 
 /************** CSS Overrides ************/
 .text, .buttonInfo {
-  color: #004a85 !important;
+  color: #325320 !important;
 }
 
 .view {
-  border-color: #004a85 !important;
+  border-color: #325320 !important;
 }
 
 
@@ -47,27 +47,9 @@ code {
 
 
 
-.widget-container.center {
-  text-align: center;
-}
-
-.widget-container {
-  border: solid 3px #190198;
-  padding: 30px 0;
-}
-
-h3.user-weight-head {
-  font-size: 38px;
-  font-weight: bold;
-  color: #004a85;
-}
 
 
 
-.widget-container h4 {
-  font-size: 44px;
-  font-weight: bold;
-}
 
 i.fas {
   font-size: 110px;
@@ -75,15 +57,10 @@ i.fas {
   color: steelblue;
 }
 
-.widget-container {
-  border: solid 3px #190198;
-  padding: 30px 0;
-  background: #f6f5ff;
-  box-shadow: 8px 6px 10px #000;
-}
+
 
 h1.user-title {
-  background: #325320;
+  background: #556B2F;
   color: #fff;
   padding: 15px 15px;
   border-top-left-radius: 15px;
@@ -94,7 +71,7 @@ h1.user-title {
 h3.user-title {
   font-size: 24px;
   font-weight: bold;
-  background: #325320;
+  background: #004a85;
   color: #fff;
   padding: 15px 15px;
   border-top-left-radius: 15px;
@@ -102,7 +79,7 @@ h3.user-title {
 }
 
 h4.user-title {
-  background: #325320;
+  background: #004a85;
   color: #fff;
   padding: 15px 15px;
   border-top-left-radius: 15px;
@@ -116,18 +93,7 @@ h4.user-title {
   text-align: center;
 }
 
-  .add-weight-form input.button {
-    background: #004a85;
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    border: solid 3px #001082;
-  }
-
-    .add-weight-form input.button:hover {
-      background: #001082;
-      border: solid 3px #004a85;
-    }
+  
 
 
 .user-container h2.table-title {
@@ -229,76 +195,6 @@ h2.sep-heading {
   margin-top: 15px;
 }
 
-a.dark-button {
-  margin: 8px 0;
-  padding: 5px 25px;
-  text-align: center;
-  border-radius: 5px;
-  text-transform: uppercase;
-  background: #004a85;
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-  border: solid 3px #000a54;
-}
-
-.dark-button {
-  margin: 8px 0;
-  padding: 5px 25px;
-  text-align: center;
-  border-radius: 5px;
-  text-transform: uppercase;
-  background: #004a85;
-  color: #fff;
-  font-size: 24px;
-  font-weight: bold;
-  border: solid 3px #000a54;
-}
-
-  .dark-button:hover {
-    background: #001082;
-    border: solid 3px #004a85;
-    text-decoration: none;
-  }
-
-a.dark-button:hover {
-  background: #001082;
-  border: solid 3px #004a85;
-  text-decoration: none;
-}
-
-.user-fav-container h3 {
-  font-size: 30px;
-  font-weight: bold;
-  color: #004a85;
-  margin-top: 5px;
-}
-
-.user-fav-container p {
-  font-weight: bold;
-}
-
-h2.home-title {
-  background: #004a85;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
-  padding: 10px 15px;
-  margin-top: 30px;
-  color: #fff;
-  margin-bottom: 0px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.home-content li {
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.home-content {
-  margin-bottom: 40px;
-}
-
 .content-container {
   background: #fff;
   box-shadow: 5px 5px 20px #000;
@@ -306,71 +202,6 @@ h2.home-title {
   padding-top: 20px;
 }
 
-/**************** Footer ********************/
-.right {
-  text-align: right;
-}
-
-.bottom-footer {
-  background: #000;
-  color: #fff;
-}
-
-  .bottom-footer a {
-    color: #fff;
-  }
-
-  .bottom-footer p {
-    margin: 10px 0px;
-  }
-
-  .bottom-footer i {
-    margin-right: 10px;
-  }
-
-footer {
-  background: #7a7a7a;
-  border-top: solid 3px #4682b4;
-  box-shadow: 0 1px 21px #000;
-  color: #fff;
-  z-index: 999;
-  position: relative;
-}
-
-  footer i.fas {
-    font-size: 28px;
-    color: #fff;
-  }
-
-  footer p a {
-    color: #fff;
-  }
-
-  footer p {
-    margin-bottom: 0;
-  }
-
-.footer {
-  margin-top: 15px;
-}
-
-footer h4 {
-  border-bottom: solid 1px;
-  padding-bottom: 5px;
-}
-
-.address i {
-  float: left;
-}
-
-.address {
-  clear: both;
-}
-
-.address {
-  border-bottom: solid 1px;
-  padding-bottom: 5px;
-}
 
 /************ Nav ****************/
 nav#main-nav {
@@ -396,13 +227,7 @@ nav#main-nav {
   margin-left: 10px;
 }
 
-.user-fav-container {
-  margin-bottom: 40px;
-  border: solid 3px #004a85;
-  padding-bottom: 30px;
-  border-radius: 4px;
-  box-shadow: 4px 4px 12px #000;
-}
+
 
 h1.main-title {
   color: #004a85;
@@ -418,7 +243,7 @@ h1.main-title {
 
 .form input, .form select, .form textarea {
   width: 100%;
-  border: solid 2px #004a85;
+  border: solid 2px #325320;
   padding: 3px;
 }
 
@@ -447,23 +272,24 @@ a:hover {
   }
 
 .sidebar-button {
-  background: #004a85;
+  background: #325320;
   color: #fff;
   font-size: 24px;
   font-weight: bold;
-  border: solid 3px #001082;
+  border: solid 3px #325320;
   width: 100%;
   padding: 5px 5px;
 }
 
   .sidebar-button:hover {
-    background: #001082;
-    border: solid 3px #004a85;
+    background: #fff;
+    color: #325320;
+    border: solid 3px #325320;
   }
 
 h3.form-title {
   color: #fff;
-  background: #0082c7;
+  background: #556B2F;
   padding: 10px 5px;
   text-align: center;
   border-top-left-radius: 10px;

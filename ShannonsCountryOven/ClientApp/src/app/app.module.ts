@@ -6,9 +6,8 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
-import { HomeComponent } from './home/home.component';
-import { CounterComponent } from './counter/counter.component';
-import { FetchDataComponent } from './fetch-data/fetch-data.component';
+
+
 
 //import services
 import { UserService } from './services/user.service';
@@ -20,6 +19,12 @@ import { RecipeComponent } from './recipe/recipe.component';
 import { RecipedetailsComponent } from './recipedetails/recipedetails.component';
 
 
+//login
+import { LoginComponent } from './login/login.component';
+import { HomeComponent } from './home/home.component';
+
+
+
 
 
 @NgModule({
@@ -27,18 +32,20 @@ import { RecipedetailsComponent } from './recipedetails/recipedetails.component'
     AppComponent,
     NavMenuComponent,
     HomeComponent,
-    CounterComponent,
-    FetchDataComponent,
     RecipeComponent,
     UserComponent,
     RecipedetailsComponent,
+    LoginComponent,
+
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: 'recipe', component: RecipeComponent, pathMatch: 'full' },
+      { path: '', component: HomeComponent, pathMatch: 'full' },
+      { path: 'login', component: LoginComponent },
+      { path: 'recipe', component: RecipeComponent },
       { path: 'recipe/:id', component: RecipedetailsComponent },
       
     ])

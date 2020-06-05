@@ -29,5 +29,68 @@ namespace ShannonsCountryOven.Controllers
         {
             return dal.DeleteUser(id);
         }
+
+        [HttpGet("all/")]
+        public IEnumerable<User> GetAllUsers()
+        {
+            IEnumerable<User> result = dal.GetAllUsers();
+            return result;
+        }
+
+        // GET: api/User
+        [HttpGet("userid/{id}")]
+        public User GetUserByID(int id)
+        {
+            return dal.GetUserByID(id);
+        }
+
+        [HttpGet("username/{userName}")]
+        public User GetUserByUserName(string userName)
+        {
+            return dal.GetUserByUserName(userName);
+        }
+
+        [HttpPost("login/")]
+        public Object Login(User u)
+        {
+            bool success = false;
+            string errorMessage = "";
+            User userInDB = null;
+
+            //TODO: better validation
+            if (u.UserName.Length >= 2)
+            {
+                userInDB = dal.GetUserByUserName(u.UserName);
+            }
+            else
+            {
+                errorMessage = "invalid username submitted";
+            }
+
+            if (userInDB is null || u is null)
+            {
+                errorMessage = "incorrect username";
+            }
+            else
+            {
+                if (userInDB.UserPassword.Equals(u.UserPassword))
+                {
+                    success = true;
+                }
+                else
+                {
+                    errorMessage = "incorrect password";
+                }
+            }
+
+            u.UserPassword = "********";
+            userInDB.UserPassword = u.UserPassword;
+            return new
+            {
+                success,
+                errorMessage,
+                user = success ? userInDB : u,
+            };
+        }
     }
 }

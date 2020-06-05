@@ -3,8 +3,11 @@ img {
   height: 300px;
   width: 300px;
   transition: box-shadow 0.3s ease;
-  border: 3px solid #190198;
+  border: 3px solid #325320;
   background: #f6f5ff;
+}
+i {
+  color: #325320;
 }
 
 .form {
@@ -31,62 +34,26 @@ tr td {
 }
 
 
-.info {
-  font-size: 38px;
-  font-weight: bold;
-  color: #0017bd;
-}
 
 
 //----------------------ViewRecipe Widget Button---------------------
 .buttonInfo {
   font-size: 30px;
   font-weight: bold;
-  color: #0017bd;
+  color: #325320;
 }
 
 .view {
   height: 300px;
   width: 300px;
   transition: box-shadow 0.3s ease;
-  border: 3px solid #190198;
+  border: 3px solid #325320;
   background: #f6f5ff;
 }
 
 .view:hover {
   box-shadow: 5px 5px 5px 5px;
 }
-
-//---------------------Add Button------------------------
-.addButton {
-  color: #0017bd;
-  float: left;
-  background-color: #f6f5ff;
-  border: 3px solid #190198;
-  position: absolute;
-  margin-left: 15px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.favButton {
-  color: #0017bd;
-  float: right;
-  background-color: #f6f5ff;
-  border: 3px solid #190198;
-  //position: absolute;
-  margin-right: 15px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.addButton:hover {
-  box-shadow: black 2px 2px 2px 2px;
-}
-
-
-
-
 
 //--------------------IMAGE TO TEXT TRANSITION-------------------------------------------
 
@@ -113,7 +80,7 @@ tr td {
   opacity: 0;
   transition: .5s ease;
   background-color: #f6f5ff;
-  border: 3px solid #190198;
+  border: 3px solid #325320;
   box-shadow: 5px 5px 5px 5px;
 }
 
@@ -124,7 +91,7 @@ tr td {
 
 
 .text {
-  color: #0017bd;
+  color: #325320;
   font-size: 30px;
   font-weight: bold;
   position: absolute;

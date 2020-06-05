@@ -15,7 +15,7 @@ img {
   width: 300px;
   transition: box-shadow 0.3s ease;
   border: 3px solid #190198;
-  background: #f6f5ff;
+  background: #556B2F;
   text-align: center;
   vertical-align: middle;
 }
@@ -42,7 +42,7 @@ img {
 .button {
   border-radius: 5px;
   background: #0017bd;
-  color: #fff;
+  color: #556B2F;
   border: solid 3px #001082;
 }
 
@@ -57,15 +57,15 @@ img {
 .menuButton {
   border-radius: 5px;
   background: #f6f5ff;
-  color: #0017bd;
-  border: solid 3px #001082;
+  color: #325320;
+  border: solid 3px #325320;
   font-weight: bold;
 }
 
 .menuButton:hover {
   background: #325320;
   color: #f6f5ff;
-  border: solid 3px #0017bd;
+  border: solid 3px #325320;
   text-decoration: none;
 }
 

@@ -21,5 +21,8 @@ export class RecipeService {
     return this.http.delete<Recipe>(`/api/recipe/${id}`);
   }
 
+  addRecipe(recipe: Recipe) {
+    return this.http.post('/api/recipe', recipe);
+  }
 
 }

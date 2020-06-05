@@ -96,6 +96,38 @@ namespace ShannonsCountryOven.Models
             return result;
         }
 
+        public User GetUserByID(int id)
+        {
+            User result = null;
+            using (var conn = new SqlConnection(connString))
+            {
+                string command = "SELECT * FROM Users WHERE ID = @id";
+                result = conn.QueryFirst<User>(command, new { id = id });
+            }
+            return result;
+        }
+        public User GetUserByUserName(string username)
+        {
+            User result = null;
+            using (var conn = new SqlConnection(connString))
+            {
+                string command = "SELECT * FROM Users WHERE Username = @username";
+                result = conn.QueryFirst<User>(command, new { username = username });
+            }
+            return result;
+        }
+        public IEnumerable<User> GetAllUsers()
+        {
+            IEnumerable<User> result = null;
+            using (var conn = new SqlConnection(connString))
+            {
+                string command = "SELECT * FROM Users";
+                result = conn.Query<User>(command);
+            }
+            return result;
+        }
+
+
 
     }
 }

@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
-import { UserService } from '../services/user.service';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { User } from '../interfaces/user';
+
+import { UserService } from '../services/user.service';
+
 
 @Component({
     selector: 'app-user',
@@ -13,4 +15,8 @@ export class UserComponent {
   constructor(private userData: UserService) { }
 
   user: User;
+
+  ngOnInit() {
+    this.user = this.userData.getUser();
+  }
 }
